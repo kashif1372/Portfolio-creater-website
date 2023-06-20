@@ -29,7 +29,7 @@ const About = () => {
             
             <div className="aboutContainerUpLeft">
                <div className="aboutContainerUpLeftBorder">
-               <img src="../Images/myimg.jpg" alt="" />
+               <img src="./Images/myimg.jpg" alt="" />
                </div>
             </div>
             <div className="aboutContainerUpRight">
