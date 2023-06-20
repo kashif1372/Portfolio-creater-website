@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+:root{
+    --text:#16181b;
+    --gray:gray;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poiret One', cursive;
+}
+
+html{
+    font-size: 62.5%;
+}
+.homeContainer{
+    height: 100vh;
+    background:url('../public/Images/L_img02.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logoSubContainer{
+    color: var(--text);
+    width: fit-content;
+}
+.logoSubContainer p{
+    text-align: center;
+    font-family: 'Gruppo', sans-serif;
+    font-size: 2.5rem;
+}
+.logoSubContainer h1{
+
+    font-family: 'Buda', cursive;
+    font-size: 6rem;
+}
+
+.homeLogo{
+    padding: 3rem;
+}
+
+.homeContainer{
+    display: grid;
+    grid-template-columns: 1fr 25rem;
+}
+.homeHeading{
+    margin: 15rem 3rem 0;
+    color: var(--text);
+    font-size: 5rem;
+}
+.homeHeading span{
+    color: var(--gray);
+    
+}
+
+
+.homeNavbar{
+    padding-right: 4rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+}
+
+.homeNavbarSub{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.homeNavbarSub:hover .homeNavbarLink{
+    transform: translateX(-10px);
+    font-size: 3.2rem;
+    
+}
+.homeNavbarSub:active .homeNavbarLink{
+    scale: 1.3;
+    
+}
+.homeNavbarSub:hover .arrowImageDiv{
+    transform: translateX(20px);
+    height: 1.8rem;
+    
+}
+.homeNavbarLink{
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    font-size: 3rem;
+    color: var(--text);
+}
+
+.arrowImageDiv{
+    transition: all 0.5s ease-in-out;
+    height: 1.7rem;
+    width: 1.5rem;
+    background:url('../public/Images/D_right_arrow.png');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
